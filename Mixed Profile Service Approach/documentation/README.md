@@ -2,7 +2,12 @@
 
 This example demonstrates adding identity claims to the `access token`. This example is wired up so that when you send a token request with the `role`, it'll return the `role` claim of the user as part of the returned access token. If you need additional user claims, you can send a request to the [UserInfo endpoint](https://identityserver4.readthedocs.io/en/latest/endpoints/userinfo.html) to retrieve the additional claims (i.e. `email` in this example).
 
-This behavior is accomplished via implementing `IProfileService` in such a way where it'd maintain the default behavior where it adds claims based on API Resources (if you're requesting an access token), or Identity Resources (if you're requesting an identity token). See [ProfileService](../src/IdentityServer4Example.STS/IdentityServer4/Services/ProfileService.cs) for the implementation, where it adds additional claims.
+This behavior is accomplished via implementing `IProfileService` in such a way where it'd maintain the default behavior where it adds claims based on:
+
+1. If you're requesting an access token, it'd add claims based on the linked claims of the corresponding **API Resources** that your requested scope matches.
+2. If you're requested an identity token, it'd add claims based on the linked claims of the corresponding **Identity Resources** that your requested scope matches.
+
+See [ProfileService](../src/IdentityServer4Example.STS/IdentityServer4/Services/ProfileService.cs) for the implementation, where it adds additional claims.
 
 > Developer Tip 💡
 >
