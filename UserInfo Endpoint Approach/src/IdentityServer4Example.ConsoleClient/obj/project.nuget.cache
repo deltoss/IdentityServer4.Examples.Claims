@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "0NYhUdZrY/axB0HrEC3N1y0N7F48qtU+wAVvOq9vS2jvJj3yiyVZpUuY610WmAGWVVhZkNcC5CmG/sYhPtNJDQ==",
+  "success": true,
+  "projectFilePath": "D:\\Git Repositories\\ASP.NET\\Code\\.NET Core\\Identity Server 4\\Manipulating Claims Examples\\UserInfo Endpoint Approach\\src\\IdentityServer4Example.ConsoleClient\\IdentityServer4Example.ConsoleClient.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Mtran\\.nuget\\packages\\identitymodel\\4.5.0\\identitymodel.4.5.0.nupkg.sha512",
+    "C:\\Users\\Mtran\\.nuget\\packages\\newtonsoft.json\\11.0.2\\newtonsoft.json.11.0.2.nupkg.sha512",
+    "C:\\Users\\Mtran\\.nuget\\packages\\system.text.encodings.web\\5.0.0\\system.text.encodings.web.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
