@@ -2,6 +2,8 @@
 
 ## What are Claims?
 
+When you're requesting access tokens from the STS (Security Token Service), i.e. Identity Server 4, as part of the token you get a number of **claims** back.
+
 `Claims` are pieces of information that describes a given entity. It may describe a client, if you're using [Client Credentials](https://oauth.net/2/grant-types/client-credentials/). Or, it could describe a user, if you're using [Password Grant](https://oauth.net/2/grant-types/password/) or [Authorisation Code](https://oauth.net/2/grant-types/authorization-code/) flow.
 
 For user focused grant types such as [Password Grant](https://oauth.net/2/grant-types/password/) or [Authorisation Code](https://oauth.net/2/grant-types/authorization-code/) flow, the `claims` can be used to identify a user, or even be used as part of the process to authenticate/authorise users.
